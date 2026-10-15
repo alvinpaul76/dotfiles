@@ -7,7 +7,7 @@ Cre8or Lab dotfiles for a consistent setup on every machine.
 | Path                          | What it is                                                                                                                                      |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`claude/`](claude/README.md) | Global Claude Code setup: settings, hooks, agents and skills. Includes `bootstrap.sh` (install) and `sync.sh` (copy live config into the repo). |
-| [`nvim/`](nvim/README.md)     | Neovim (LazyVim) config. Includes `bootstrap.sh` (install) and `sync.sh` (copy live config into the repo). |
+| [`nvim/`](nvim/README.md)     | Neovim (LazyVim) config. Includes `bootstrap.sh` (install) and `sync.sh` (copy live config into the repo).                                      |
 
 ## Usage
 

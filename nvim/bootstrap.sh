@@ -2,6 +2,9 @@
 # Install this Neovim config on a new machine. Backs up any existing config.
 set -euo pipefail
 here="$(cd "$(dirname "$0")" && pwd)"
+# shellcheck source=../lib/deps.sh
+. "$here/../lib/deps.sh"
+ensure_cmd rsync
 dest="${XDG_CONFIG_HOME:-$HOME/.config}/nvim"
 if [ -e "$dest" ]; then
   mv "$dest" "$dest.bak-$(date +%s)"
