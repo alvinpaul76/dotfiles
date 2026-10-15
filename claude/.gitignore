@@ -1,0 +1,9 @@
+.credentials.json
+projects/
+history.jsonl
+session-env/
+shell-snapshots/
+file-history/
+plugins/
+cache/
+*.bak-*

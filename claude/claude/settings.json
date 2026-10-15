@@ -1,0 +1,85 @@
+{
+  "model": "sonnet",
+  "skillOverrides": {
+    "ask-matt": "user-invocable-only",
+    "chief-of-staff": "user-invocable-only",
+    "claude-handoff": "user-invocable-only",
+    "codebase-design": "user-invocable-only",
+    "diagnosing-bugs": "user-invocable-only",
+    "git-guardrails-claude-code": "user-invocable-only",
+    "grill-me": "user-invocable-only",
+    "grill-with-docs": "user-invocable-only",
+    "handoff": "user-invocable-only",
+    "implement": "user-invocable-only",
+    "implement-spec": "user-invocable-only",
+    "improve-codebase-architecture": "user-invocable-only",
+    "loop-me": "user-invocable-only",
+    "migrate-to-shoehorn": "user-invocable-only",
+    "pr": "user-invocable-only",
+    "prototype": "user-invocable-only",
+    "research": "user-invocable-only",
+    "retro": "user-invocable-only",
+    "scaffold-exercises": "user-invocable-only",
+    "setup-matt-pocock-skills": "user-invocable-only",
+    "setup-pre-commit": "user-invocable-only",
+    "setup-ts-deep-modules": "user-invocable-only",
+    "teach": "user-invocable-only",
+    "to-questionnaire": "user-invocable-only",
+    "to-spec": "user-invocable-only",
+    "to-tickets": "user-invocable-only",
+    "triage": "user-invocable-only",
+    "wait-what": "user-invocable-only",
+    "wayfinder": "user-invocable-only",
+    "wizard": "user-invocable-only",
+    "writing-beats": "user-invocable-only",
+    "writing-for-agents": "user-invocable-only",
+    "writing-fragments": "user-invocable-only",
+    "writing-shape": "user-invocable-only",
+    "docs": "user-invocable-only",
+    "docx": "user-invocable-only",
+    "google-workspace": "user-invocable-only",
+    "import-memory": "user-invocable-only",
+    "morning": "user-invocable-only",
+    "pdf": "user-invocable-only",
+    "pptx": "user-invocable-only",
+    "skill-creator": "user-invocable-only",
+    "xlsx": "user-invocable-only"
+  },
+  "disableBundledSkills": true,
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/bin/claude-code-statusline"
+  },
+  "enabledPlugins": {
+    "cc-statusline@cc-statusline": true,
+    "voice-notify@agent-skills-by-cre8orlab": true
+  },
+  "extraKnownMarketplaces": {
+    "cc-statusline": {
+      "source": {
+        "source": "github",
+        "repo": "erwint/claude-code-statusline"
+      }
+    },
+    "agent-skills-by-cre8orlab": {
+      "source": {
+        "source": "github",
+        "repo": "alvinpaul76/agent-skills-by-cre8orlab"
+      }
+    }
+  },
+  "theme": "dark-ansi",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$HOME/.claude/hooks/quiet-command-output.py\" --hook"
+          }
+        ]
+      }
+    ]
+  }
+}
