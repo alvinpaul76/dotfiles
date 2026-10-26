@@ -1,0 +1,36 @@
+onboarding = false
+
+[terminal]
+# Inherits the directory from whichever pane you are currently looking at
+new_cwd = "follow"
+
+# Alternative Options:
+# new_cwd = "home"        # Forces every new tab/pane to open in $HOME
+# new_cwd = "current"     # Spawns in the current herdr server process directory
+# new_cwd = "~/Projects"  # Spawns all new panes into a fixed directory path
+
+[theme]
+name = "dracula"
+auto_switch = false
+
+[ui.sound]
+enabled = true
+
+[[keys.command]]
+key = "prefix+P"
+type = "plugin_action"
+command = "ray.plugin-manager.open"
+description = "open plugin manager"
+
+[[keys.command]]
+key = "prefix+up"
+type = "plugin_action"
+command = "cloudmanic.herdr-plus.projects"
+description = "herdr-plus: projects"
+
+[[keys.command]]
+key = "prefix+down"
+type = "plugin_action"
+command = "cloudmanic.herdr-plus.quick-actions"
+description = "herdr-plus: quick actions"
+

@@ -1,0 +1,11 @@
+name = "herdr"
+description = "Automated environment with editor and terminal views."
+working_dir = "~/.config/herdr"
+
+[[tabs]]
+name = "editor"
+command = "nvim ."
+
+[[tabs]]
+name = "shell"
+

@@ -1,0 +1,3 @@
+name = "Free Memory"
+command = "/workspace/free-memory.sh"
+

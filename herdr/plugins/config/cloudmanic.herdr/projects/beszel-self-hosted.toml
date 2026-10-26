@@ -1,0 +1,15 @@
+name = "beszel-self-hosted.toml"
+description = "Automated environment with editor and terminal views."
+working_dir = "/workspace/beszel-self-hosted"
+
+[[tabs]]
+name = "editor"
+command = "nvim ."
+
+[[tabs]]
+name = "shell"
+
+[[tabs]]
+name = "claude"
+command = "claude"
+
