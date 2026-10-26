@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Pull the latest dotfiles and deploy them on this machine.
-# Usage: git pull-deploy [claude] [nvim]   (or ./deploy.sh ...)
+# Usage: git pull-deploy [claude] [nvim] [herdr]   (or ./deploy.sh ...)
 # With no arguments, every component is deployed.
 # The first run also registers the `pull-deploy` git alias for this repo.
 set -euo pipefail
@@ -8,7 +8,7 @@ set -euo pipefail
 root=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 cd "$root"
 
-components=(claude nvim)
+components=(claude nvim herdr)
 targets=("$@")
 (( ${#targets[@]} )) || targets=("${components[@]}")
 

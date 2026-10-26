@@ -1,6 +1,6 @@
-name = "herdr"
+name = "dotfiles"
 description = "Automated environment with editor and terminal views."
-working_dir = "~/.config/herdr"
+working_dir = "~/dotfiles"
 
 [[tabs]]
 name = "editor"
@@ -8,4 +8,3 @@ command = "nvim ."
 
 [[tabs]]
 name = "shell"
-

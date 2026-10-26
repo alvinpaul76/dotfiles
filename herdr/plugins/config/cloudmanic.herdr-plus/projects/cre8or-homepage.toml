@@ -1,6 +1,6 @@
-name = "cloudflared"
+name = "cre8or-homepage"
 description = "Automated environment with editor and terminal views."
-working_dir = "/workspace/cloudflared"
+working_dir = "/workspace/cre8or-homepage"
 
 [[tabs]]
 name = "editor"
@@ -13,3 +13,6 @@ name = "shell"
 name = "claude"
 command = "claude"
 
+[[tabs]]
+name = "lazygit"
+command = "lazygit"

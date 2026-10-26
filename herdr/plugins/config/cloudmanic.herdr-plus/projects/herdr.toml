@@ -1,6 +1,6 @@
-name = "Default Workspace"
+name = "herdr"
 description = "Automated environment with editor and terminal views."
-working_dir = "/workspace"
+working_dir = "~/.config/herdr"
 
 [[tabs]]
 name = "editor"
@@ -8,8 +8,3 @@ command = "nvim ."
 
 [[tabs]]
 name = "shell"
-
-[[tabs]]
-name = "claude"
-command = "claude"
-

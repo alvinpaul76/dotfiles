@@ -1,6 +1,6 @@
-name = "home"
+name = "beszel-self-hosted"
 description = "Automated environment with editor and terminal views."
-working_dir = "~"
+working_dir = "/workspace/beszel-self-hosted"
 
 [[tabs]]
 name = "editor"
@@ -8,4 +8,3 @@ command = "nvim ."
 
 [[tabs]]
 name = "shell"
-

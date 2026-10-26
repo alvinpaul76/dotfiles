@@ -1,0 +1,14 @@
+name = "Default Workspace"
+description = "Automated environment with editor and terminal views."
+working_dir = "/workspace"
+
+[[tabs]]
+name = "editor"
+command = "nvim ."
+
+[[tabs]]
+name = "shell"
+
+[[tabs]]
+name = "claude"
+command = "claude"

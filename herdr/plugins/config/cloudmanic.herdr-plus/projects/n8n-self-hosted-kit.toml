@@ -1,6 +1,6 @@
-name = "beszel-self-hosted.toml"
+name = "n8n-self-hosted-kit"
 description = "Automated environment with editor and terminal views."
-working_dir = "/workspace/beszel-self-hosted"
+working_dir = "/workspace/n8n-self-hosted-kit"
 
 [[tabs]]
 name = "editor"
@@ -13,3 +13,6 @@ name = "shell"
 name = "claude"
 command = "claude"
 
+[[tabs]]
+name = "lazygit"
+command = "lazygit"

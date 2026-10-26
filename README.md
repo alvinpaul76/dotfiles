@@ -8,6 +8,7 @@ Cre8or Lab dotfiles for a consistent setup on every machine.
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`claude/`](claude/README.md) | Global Claude Code setup: settings, hooks, agents and skills. Includes `bootstrap.sh` (install) and `sync.sh` (copy live config into the repo). |
 | [`nvim/`](nvim/README.md)     | Neovim (LazyVim) config. Includes `bootstrap.sh` (install) and `sync.sh` (copy live config into the repo).                                      |
+| [`herdr/`](herdr/README.md)   | herdr config plus plugins (plugin manager, herdr-plus). Includes `bootstrap.sh` (install) and `sync.sh` (copy live config into the repo).      |
 
 ## Usage
 
@@ -15,6 +16,7 @@ Cre8or Lab dotfiles for a consistent setup on every machine.
 git clone git@github.com:alvinpaul76/dotfiles.git ~/dotfiles
 cd ~/dotfiles/claude && ./bootstrap.sh
 cd ~/dotfiles/nvim && ./bootstrap.sh
+cd ~/dotfiles/herdr && ./bootstrap.sh
 ```
 
 See [`claude/README.md`](claude/README.md) for details, including the post-install `/plugin` step and [`nvim/README.md`](nvim/README.md) for the Neovim setup.
@@ -35,7 +37,8 @@ To deploy only some components, name them:
 ```sh
 git pull-deploy claude        # Claude Code setup only
 git pull-deploy nvim          # Neovim only
-git pull-deploy claude nvim   # both (same as no arguments)
+git pull-deploy herdr         # herdr only
+git pull-deploy claude nvim   # several (no arguments = all)
 ```
 
 The pull is fast-forward only, so it fails instead of merging if the host has local commits.
