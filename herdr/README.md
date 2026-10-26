@@ -31,9 +31,10 @@ Or as part of the whole repo: `./deploy.sh herdr` (also runs with no arguments, 
 The script is safe to re-run. It:
 
 1. Copies `config.toml` to `~/.config/herdr/` (an existing, different file is saved as `config.toml.bak-<timestamp>`).
-2. Installs each plugin that is not already installed.
-3. Copies `plugins/config/` into `~/.config/herdr/plugins/config/`.
-4. Reloads the herdr server config if one is running.
+2. Installs the latest Go to `~/.local/go` if Go is missing or older than 1.21 (herdr-plus needs it; add `~/.local/go/bin` to your `PATH`).
+3. Installs each plugin that is not already installed.
+4. Copies `plugins/config/` into `~/.config/herdr/plugins/config/`.
+5. Reloads the herdr server config if one is running.
 
 ## Install plugins manually
 
@@ -43,7 +44,7 @@ herdr plugin install cloudmanic/herdr-plus
 herdr plugin list
 ```
 
-Add `--yes` to skip the confirmation prompt, or `--ref <ref>` to pin a branch, tag or commit. herdr-plus is built on install (`scripts/build.sh`), so it needs the Go toolchain.
+Add `--yes` to skip the confirmation prompt, or `--ref <ref>` to pin a branch, tag or commit. herdr-plus is built on install (`scripts/build.sh`), so it needs Go >= 1.21 (go.mod pins a newer toolchain, auto-fetched).
 
 Update later with `herdr plugin update`.
 
