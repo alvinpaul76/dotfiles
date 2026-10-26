@@ -1,0 +1,10 @@
+name = "portainer-compose"
+description = "Automated environment with editor and terminal views."
+working_dir = "/workspace/portainer-compose"
+
+[[tabs]]
+name = "editor"
+command = "nvim ."
+
+[[tabs]]
+name = "shell"
